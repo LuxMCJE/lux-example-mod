@@ -1,0 +1,6 @@
+{
+  "id": "example-mod",
+  "version": "1.0.0",
+  "name": "Lux Example Mod",
+  "entrypoint": "net.luxmcje.example.ExampleMod::init"
+}

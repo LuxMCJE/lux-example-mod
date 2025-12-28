@@ -9,8 +9,4 @@ public class ExampleMod {
         System.out.println("   Running on LuxLoader v0.1.0         ");
         System.out.println("---------------------------------------");
     }
-    project.getDependencies().getExtensions().add("minecraft", new Object() {
-        public void minecraft(String version) {
-        }
-    });
 }

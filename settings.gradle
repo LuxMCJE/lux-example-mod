@@ -1,7 +1,7 @@
 pluginManagement {
     repositories {
         maven {
-            url = "https://maven.pkg.github.com/LuxMCJE/lux-loom"
+            url = "https://maven.pkg.github.com/LuxMCJE/lux-loader"
             credentials {
                 username = System.getenv("GITHUB_ACTOR")
                 password = System.getenv("GITHUB_TOKEN")

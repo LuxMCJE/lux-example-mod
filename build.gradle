@@ -1,5 +1,5 @@
 plugins {
-    id 'net.luxmcje.loom' version '0.1.4-alpha'
+    id 'net.luxmcje.loom' version '0.1.6-alpha'
     id 'java'
 }
 
@@ -8,7 +8,6 @@ version = '1.0.0'
 
 repositories {
     maven {
-        url = "https://maven.pkg.github.com/LuxMCJE/lux-loom"
         url = "https://maven.pkg.github.com/LuxMCJE/lux-loader"
         credentials {
             username = System.getenv("GITHUB_ACTOR")

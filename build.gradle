@@ -1,5 +1,5 @@
 plugins {
-    id 'net.luxmcje.loom' version '0.1.15-alpha'
+    id 'net.luxmcje.loom' version '0.1.16-alpha'
     id 'java'
 }
 
@@ -14,5 +14,5 @@ repositories {
 dependencies {
     mappings "net.luxmcje:lux-yarn:1.20.1+build.1"
     minecraft "com.mojang:minecraft:1.20.1" 
-    implementation "net.luxmcje:lux-loader:0.1.0"
+    implementation "com.github.LuxMCJE:lux-loader:main-SNAPSHOT"
 }

@@ -12,4 +12,19 @@ pluginManagement {
     }
 }
 
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        mavenCentral()
+        maven { url "https://jitpack.io" } 
+        maven {
+            url = "https://maven.pkg.github.com/LuxMCJE/lux-loader"
+            credentials {
+                username = System.getenv("GITHUB_ACTOR")
+                password = System.getenv("GITHUB_TOKEN")
+            }
+        }
+    }
+}
+
 rootProject.name = 'lux-example-mod'

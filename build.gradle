@@ -8,9 +8,7 @@ version = '1.0.0'
 
 repositories {
     mavenCentral()
-    maven {
-        url = "https://maven.pkg.github.com/LuxMCJE/lux-loader"
-    }
+    maven { url "https://jitpack.io"}
 }
 
 dependencies {

@@ -1,5 +1,5 @@
 plugins {
-    id 'net.luxmcje.loom' version '0.1.12-alpha'
+    id 'net.luxmcje.loom' version '0.1.14-alpha'
     id 'java'
 }
 
@@ -7,13 +7,9 @@ group = 'net.luxmcje.example'
 version = '1.0.0'
 
 repositories {
-    maven { url "https://jitpack.io" }
+    mavenCentral()
     maven {
         url = "https://maven.pkg.github.com/LuxMCJE/lux-loader"
-        credentials {
-            username = System.getenv("GITHUB_ACTOR")
-            password = System.getenv("GITHUB_TOKEN")
-        }
     }
 }
 
@@ -21,5 +17,4 @@ dependencies {
     mappings "net.luxmcje:lux-yarn:1.20.1+build.1"
     minecraft "com.mojang:minecraft:1.20.1" 
     implementation "net.luxmcje:lux-loader:0.1.0"
-    compileOnly files("libs/lux-loader-0.1.0.jar")
 }

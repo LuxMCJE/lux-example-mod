@@ -9,5 +9,5 @@ version = '1.0.0'
 dependencies {
     mappings "net.luxmcje:lux-yarn:1.20.1+build.1"
     minecraft "com.mojang:minecraft:1.20.1" 
-    implementation "com.github.LuxMCJE:lux-loader:main-SNAPSHOT"
+    implementation "com.github.LuxMCJE:lux-loader:0.1.0"
 }

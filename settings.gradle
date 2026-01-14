@@ -18,13 +18,6 @@ dependencyResolutionManagement {
         mavenCentral()
         maven { url "https://jitpack.io" } 
         maven { url "https://luxmcje.github.io/lux-mappings/" }
-        maven {
-            url = "https://maven.pkg.github.com/LuxMCJE/lux-loader"
-            credentials {
-                username = System.getenv("GITHUB_ACTOR")
-                password = System.getenv("GITHUB_TOKEN")
-            }
-        }
     }
 }
 

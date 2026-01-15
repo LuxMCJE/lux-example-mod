@@ -17,14 +17,11 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
 
-      - name: Clean Cache
+      - name: Hard Clean
         run: |
-          rm -rf ~/.gradle/caches/
-          rm -rf .gradle/
+          rm -rf ~/.gradle/caches/modules-2/files-2.1/net.luxmcje.loom/
           rm -rf build/lux-cache/
-
-      - name: Build Mod with LuxLoom
-        run: ./gradlew build --refresh-dependencies
+          ./gradlew clean
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_ACTOR: ${{ github.actor }}

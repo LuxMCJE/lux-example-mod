@@ -14,11 +14,14 @@ jobs:
           distribution: 'temurin'
           cache: 'gradle'
 
-      - name: Clean Cache
-        run: rm -rf ~/.gradle/caches/ && rm -rf build/lux-cache/
-
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
+
+      - name: Clean Cache
+        run: |
+          rm -rf ~/.gradle/caches/
+          rm -rf .gradle/
+          rm -rf build/lux-cache/
 
       - name: Build Mod with LuxLoom
         run: ./gradlew build --refresh-dependencies
@@ -31,3 +34,11 @@ jobs:
         with:
           name: Lux-Example-Mod
           path: build/libs/*.jar
+      - name: Clean Cache
+        run: |
+          rm -rf ~/.gradle/caches/
+          rm -rf .gradle/
+          rm -rf build/lux-cache/
+          
+      - name: Build Mod with LuxLoom
+        run: ./gradlew assemble --refresh-dependencies

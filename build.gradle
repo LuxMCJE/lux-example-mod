@@ -1,5 +1,5 @@
 plugins {
-    id 'net.luxmcje.loom' version '0.2.0-RELEASE'
+    id 'net.luxmcje.loom' version '1.0.0-GOLD'
     id 'java'
 }
 

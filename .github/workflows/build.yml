@@ -18,10 +18,9 @@ jobs:
         
       - name: Hard Reset Environment
         run: |
-          ./gradlew --stop
           rm -rf ~/.gradle/caches/modules-2/files-2.1/com.github.LuxMCJE/
           rm -rf ~/.gradle/caches/modules-2/files-2.1/net.luxmcje.loom/
-          rm -rf build/lux-cache/
+          rm -rf build/
 
       - name: Build Mod with LuxLoom
         run: ./gradlew build --refresh-dependencies

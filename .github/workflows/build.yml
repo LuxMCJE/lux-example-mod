@@ -25,7 +25,7 @@ jobs:
           rm -rf .gradle/
 
       - name: Build Mod with LuxLoom
-        run: ./gradlew build --refresh-dependencies
+        run: ./gradlew build --refresh-dependencies -Pforce-refresh=true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_ACTOR: ${{ github.actor }}
